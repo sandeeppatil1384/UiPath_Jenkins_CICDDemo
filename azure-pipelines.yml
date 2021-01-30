@@ -10,7 +10,7 @@ stages:
    displayName: Create build artifact
    jobs:
      - job: BuildArtifact
-       pool: MYLAPTOP
+       pool: DESKTOP-BOJE1DC
        steps:
          - script: C:\Users\admin\AppData\Local\UiPath\app-20.10.2\UiRobot.exe pack $(Build.SourcesDirectory)\project.json -o $(Build.ArtifactStagingDirectory)\ -v 1.0.$(Build.BuildNumber)
            displayName: "Build the artifact"
