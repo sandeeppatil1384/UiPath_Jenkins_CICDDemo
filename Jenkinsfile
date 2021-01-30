@@ -57,7 +57,7 @@ pipeline {
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
-	                //packagePath: "Output\\${}",
+	                packagePath: "Output\\${}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
